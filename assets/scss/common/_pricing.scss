@@ -1,0 +1,124 @@
+.cs_pricing {
+    .cs_section_heading {
+        text-align: center;
+        padding-bottom: 56px;
+    }
+
+    .cs_tab_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            &:hover {
+                color: #6C6C6C;
+            }
+        }
+    }
+}
+
+.cs_switch {
+    display: inline-block;
+    position: relative;
+    height: 28px;
+    width: 60px;
+    border-radius: 1.6em;
+    background-color: #e4e4e4;
+    margin: 0 15px;
+
+    &::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: var(--ternary);
+        top: 4px;
+        left: 36px;
+        position: absolute;
+        // transition: all 0.4s ease;
+    }
+}
+
+.active {
+    .cs_switch {
+        &::before {
+            left: 4px;
+        }
+    }
+}
+
+a {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 24px;
+        width: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100%;
+        z-index: 1;
+    }
+}
+
+.cs_tab_links {
+    li {
+        &:last-child {
+            a {
+                &::before {
+                    left: initial;
+                    right: 100%;
+                }
+            }
+        }
+    }
+}
+
+.cs_tab_body {
+    .cs_pricing_table {
+        padding: 30px 35px;
+        .cs_btn {
+            margin-top: 28px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .cs_pricing_feature {
+            list-style: none;
+
+            li {
+                padding-bottom: 12px;
+
+                span {
+                    padding-left: 9px;
+                }
+            }
+        }
+
+        &:hover {
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(10, 10, 16, 0.10);
+            
+        }
+    }
+}
+
+.cs_tab{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

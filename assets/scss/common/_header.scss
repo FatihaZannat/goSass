@@ -1,0 +1,40 @@
+
+.cs_site_header.cs_style_1{
+    .cs_main_header_in{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: var(--secondary);
+        }
+    }
+
+}
+.cs_main_header_left{
+h1{
+    a{
+      span{
+        color: var(--accent);
+      }
+    }
+}
+    
+}
+.cs_main_header_right{
+    .cs_nav{
+
+        .cs_nav_list{
+            display: flex;
+            li{
+                &:not(:first-child){
+                    margin-left: 40px;
+                }
+               a{
+                
+               }
+            }
+        }
+    }
+}

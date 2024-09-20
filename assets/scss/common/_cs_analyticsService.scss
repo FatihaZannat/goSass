@@ -1,0 +1,40 @@
+.cs_analytical_service{
+    background-color: #F2FCF7;
+.cs_analytical_service_in{
+   p:first-child{
+    padding-bottom: 60px;
+   }
+}
+}
+
+.cs_analytical_service_card{
+    width: 450px;
+    margin-left: 24px;
+box-shadow: 0px 0px 30px 0px rgba(10, 10, 16, 0.04);
+
+    .cs_analytical_service_card_in{
+        padding: 40px 36px 36px 40px;
+        span{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #936DFF;
+            opacity: 0.07;
+        }
+    }
+    i{
+        position: absolute;
+        top: 48px;
+        left: 45px;
+    }
+}
+
+.cs_section_footer{
+    padding-top: 60px;
+    text-align: center;
+    a{
+        margin-bottom:21px ;
+    }
+   
+}

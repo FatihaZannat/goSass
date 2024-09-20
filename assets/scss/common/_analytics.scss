@@ -1,0 +1,50 @@
+.cs_site_analytics {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cs_site_analytics_in {
+    text-align: center;
+
+    h2 {
+        padding-bottom: 40px;
+    }
+}
+
+.cs_odometer {
+    .cs_odometer_in {
+        display: flex;
+        justify-content: space-between;
+
+        .cs_odometter_content {
+            div {
+                span {
+                    &:last-child {
+                        margin-left: -20px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.cs_corner2 {
+    width: 80px;
+    height: 155px;
+    background-color: var(--ternary);
+    left: 0;
+    bottom: 0;
+    
+    border-radius: 0px 100px 0px 0px;
+}
+.cs_corner1 {
+    width: 80px;
+    height: 155px;
+    background-color: var(--accent);
+    border-radius: 0px 0px 0px 100px;
+    top: 0;
+    right: 0;
+}
