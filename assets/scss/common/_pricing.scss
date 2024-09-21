@@ -122,3 +122,16 @@ a {
         display: block;
     }
 }
+
+.cs_save_25{
+    top: -11px;
+    left: 90px;
+    &::after{
+        content: 'save 25%';
+        top: 40px;
+        position: absolute;
+        width: 100%;
+        color: var(--accent);
+        
+    }
+}

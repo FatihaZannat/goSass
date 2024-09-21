@@ -1,0 +1,76 @@
+.cs_connected{
+    overflow: hidden;
+}
+.cs_connected_in{
+   border-radius: 40px;
+   color: #fff;
+   display: flex;
+   padding: 0px 85px 0 95px;
+   
+}
+
+.cs_connected_left{
+    
+   .cs_contacted_form{
+        input{
+            width: 552px;
+            height: 70px;
+            background-color: var(--dark-blue);
+            color: #fff;
+            border-radius: 40px;
+            padding-left: 10px;
+            border: 1px solid #fff;
+        }
+        .cs_btn{
+            top: 6px;
+            right: 10px;
+        }
+    }
+}
+.cs_connected_right{
+    padding-left: 50px;
+
+    img{
+        position: relative;
+        z-index: 50;
+    }
+    i{
+        left: 80px;
+    }
+    .cs_happy_girl{
+        left: 140px;
+        top: -25px;
+        transform: scale(1.2);
+        z-index: 100;
+    }
+    .cs_happy_girl_comment{
+        top: -12px;
+        left: 195px;
+        color: var(--primary);
+        transform: rotate(6deg);
+        z-index: 120;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        right: -118px;
+        bottom: -229px;
+        width: 407px;
+        height: 407px;
+        border: 7px solid var(--lite-gray);
+        border-radius: 50%;
+        
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        right: -306px;
+        bottom: -184px;
+        width: 407px;
+        height: 407px;
+        border: 7px solid #936DFF;
+        opacity: 0.8;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

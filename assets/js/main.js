@@ -30,11 +30,7 @@
             e.preventDefault();
 
            let currentAttrValue = $(this).attr('href')
-        //    console.log(('.cs_tabs' + currentAttrValue));
-        //    $('.cs_tabs' + currentAttrValue)
-        //    .fadeIn(400)
-        //    .siblings()
-        //    .hide();
+      
         $('.cs_tab').hide()
         $(currentAttrValue).fadeIn(400)
             $(this).parents('li').addClass('active').siblings().removeClass('active')
