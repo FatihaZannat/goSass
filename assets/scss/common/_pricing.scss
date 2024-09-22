@@ -57,18 +57,20 @@
     }
 }
 
-a {
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        height: 24px;
-        width: 50px;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 100%;
-        z-index: 1;
+.cs_pricing{
+    a {
+        position: relative;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            height: 24px;
+            width: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100%;
+            z-index: 1;
+        }
     }
 }
 
@@ -88,7 +90,7 @@ a {
 .cs_tab_body {
     .cs_pricing_table {
         padding: 30px 35px;
-        .cs_btn {
+        &.cs_btn {
             margin-top: 28px;
             margin-bottom: 28px;
             display: flex;

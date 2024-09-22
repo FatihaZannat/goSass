@@ -1,10 +1,27 @@
+.cs_faq{
+    h2{
+        text-align: center;
+        padding-bottom: 54px;
+    }
+}
 .cs_accordians {
 
     .cs_accordian {
         position: relative;
         background-color: var(--lite-gray);
+        color: var(--secondary);
         border-radius: 15px;
         margin-bottom: 24px;
+        .cs_accordian_head{
+            height: 80px;
+            display: flex;
+            align-items: center;
+            
+            padding-left: 25px;
+        }
+        .cs_accordian_body{
+            padding-left: 25px;
+        }
      
     }
 }
@@ -14,24 +31,40 @@
 .cs_accordian_toggle {
     display: block;
     position: absolute;
-    top: 22px;
-    right: 10%;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-
-    border-top: 10px solid green;
+    // top: 50%;
+    // transform: translate(0,-50%);
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    transition: all .03s ease;
+    &::after,
+    &::before{
+        content: '';
+        height: 2px;
+        width: 60%;
+        background-color: var(--secondary);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -30%;
+        margin-top: -1px;
+        cursor: pointer;
+    }
+    &::after{
+        transform: rotate(90deg);
+    }
 
 }
 
 .cs_accordian{
-    border-bottom: 1px solid var(--lite-gray);
+    // border-bottom: 1px solid var(--lite-gray);
 
     &.active{
 
         .cs_accordian_toggle{
-            transform: rotate(180deg);
+            &::after{
+                display: none;
+            }
         }
     }
 }
