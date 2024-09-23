@@ -30,10 +30,14 @@ h1{
             li{
                 &:not(:first-child){
                     margin-left: 40px;
+                  
                 }
-               a{
-                
-               }
+             a{
+                transition: all 0.3s ease;
+                &:hover{
+                    border-bottom: 3px solid var(--accent);
+                  }
+             }
             }
         }
     }

@@ -1,6 +1,7 @@
-.cs_hero.cs_style_1{
-  height: 100vh;
-    .cs_hero_in{
+.cs_hero.cs_style_1 {
+    height: 100vh;
+
+    .cs_hero_in {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -8,37 +9,51 @@
         overflow: hidden;
     }
 }
-.cs_hero_left{
-    max-width: 648px;
+
+.cs_hero_left {
     padding-right: 100px;
     margin-top: 77px;
-    h1{
+
+    h1 {
         padding-bottom: 30px;
     }
-    p{
+
+    p {
         padding-bottom: 40px;
     }
-    .cs_play_btn{
+
+    .cs_play_btn {
         width: 35px;
         height: 35px;
-        
+
         border: 1px solid var(--secondary);
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        
+
+    }
+   
+}
+
+.cs_hero_right {
+    .cs_hero_right_in {
+        right: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+            border-radius: 20px 0 0 20px;
+            box-shadow: -5px -5px 20px #D9D9D9;
+        }
+
+        i {
+            top: -69px;
+            left: -72px;
+        }
     }
 }
-.cs_hero_right{
-    width: 40%;
-    .cs_hero_right_in{
-        right: 0; 
-        top: 0;
-    img{
-    width: 100%;
-    border-radius: 20px 0 0 20px;
-    box-shadow: -5px -5px 20px #D9D9D9;
-    }
-    }
+ .cs_hero_arrow{
+    left: -100px;
+    top: -30px;
 }

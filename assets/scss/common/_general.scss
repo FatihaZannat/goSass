@@ -186,13 +186,16 @@
   }
 
   &:hover {
-    background-color: aqua
+    // background-color: aqua;
+    color: #000;
+
   }
 
   &.cs_type_1 {
     background-color: transparent;
     color: var(--secondary);
     gap: 10px;
+    
 
     span {
       display: flex;
@@ -214,7 +217,10 @@
     }
 
     &:hover {
-      color: var(--ternary);
+      // color: var(--ternary);
+      border: 1px solid var(--accent);
+      border-radius: 30px;
+      margin-left: 20px;
 
       i {
         &:first-child {
